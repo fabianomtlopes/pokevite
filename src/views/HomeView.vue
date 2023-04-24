@@ -89,8 +89,14 @@
 
 <style scoped>
     .card-list {
-        overflow-y: scroll;
         max-height: 75vh;
+        overflow-y: scroll;
         overflow-x: hidden;
+    }
+
+    @media (max-width: 768px) {
+        .card-list {
+            max-height: 48vh;
+        }
     }
 </style>

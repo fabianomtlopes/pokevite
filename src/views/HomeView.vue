@@ -48,6 +48,10 @@
                     :name="pokemonSelected?.name"
                     :xp="pokemonSelected?.base_experience"
                     :height="pokemonSelected?.height"
+                    :habilidades="pokemonSelected?.abilities[0].ability.name"
+                    :moves="pokemonSelected?.moves[0].move.name"
+                    :peso="pokemonSelected?.weight"
+                    :especie="pokemonSelected?.species.name"
                     :img="pokemonSelected?.sprites.other.dream_world.front_default"
                     :loading="loading"
                     />
